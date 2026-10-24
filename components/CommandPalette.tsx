@@ -22,8 +22,8 @@ import {
     Copy,
     Github,
     Twitter,
-    Linkedin,
-    AtSign,
+    Globe,
+    Send,
     LayoutTemplate,
     Beaker
 } from "lucide-react";
@@ -130,14 +130,14 @@ export function CommandPalette({ onNavigate, toggleTheme, isDark }: CommandPalet
             action: () => toggleTheme(),
         },
         {
-            id: "copy-email",
+            id: "copy-website",
             icon: Copy,
-            label: "Copy Email",
+            label: "Copy Website",
             shortcut: "E",
-            description: "Copy my email address to clipboard",
+            description: "Copy my website address to clipboard",
             action: () => {
-                navigator.clipboard.writeText("hello.animeshh@gmail.com");
-                alert("Email copied to clipboard!");
+                navigator.clipboard.writeText("https://zruvix.com");
+                alert("Website copied to clipboard!");
             },
         },
         // --- Socials ---
@@ -146,28 +146,28 @@ export function CommandPalette({ onNavigate, toggleTheme, isDark }: CommandPalet
             icon: Github,
             label: "GitHub",
             description: "Check out my open source work",
-            action: () => window.open("https://github.com/animatrix01", "_blank"),
+            action: () => window.open("https://github.com/zRuvix", "_blank"),
         },
         {
             id: "social-twitter",
             icon: Twitter,
             label: "Twitter / X",
             description: "Follow me for updates",
-            action: () => window.open("https://x.com/animatrix01", "_blank"),
+            action: () => window.open("https://x.com/zRuvix_", "_blank"),
         },
         {
-            id: "social-linkedin",
-            icon: Linkedin,
-            label: "LinkedIn",
-            description: "Connect with me professionally",
-            action: () => window.open("https://www.linkedin.com/in/thakuranimesh/", "_blank"),
+            id: "social-website",
+            icon: Globe,
+            label: "Website",
+            description: "Visit my personal site",
+            action: () => window.open("https://zruvix.com", "_blank"),
         },
         {
-            id: "social-email",
-            icon: AtSign,
-            label: "Email",
-            description: "Send me a message directly",
-            action: () => window.open("mailto:hello.animeshh@gmail.com", "_blank"),
+            id: "social-telegram",
+            icon: Send,
+            label: "Telegram",
+            description: "Message me on Telegram",
+            action: () => window.open("https://t.me/zRuvix", "_blank"),
         },
     ], [onNavigate, toggleTheme, isDark]);
 
@@ -340,7 +340,7 @@ export function CommandPalette({ onNavigate, toggleTheme, isDark }: CommandPalet
                                                                 </span>
                                                                 <div className="flex flex-col">
                                                                     <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
-                                                                        {cmd.id === 'social-email' && hoveredCommandId === 'social-email' ? "hello.animeshh@gmail.com" : cmd.label}
+                                                                        {cmd.id === 'social-telegram' && hoveredCommandId === 'social-telegram' ? "@zRuvix" : cmd.label}
                                                                     </span>
                                                                     <span className="text-xs text-gray-500 dark:text-gray-500">
                                                                         {cmd.description}

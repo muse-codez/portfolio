@@ -12,18 +12,18 @@ interface ProjectsPageProps {
 
 const PROJECTS = [
     {
-        title: "NextCareer AI",
-        desc: "An AI-powered career platform that lets users build professional resumes and generate personalized career roadmaps.",
-        tags: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Drizzle ORM", "Neon Postgres", "Clerk", "Upstash"],
-        image: "https://picsum.photos/seed/nextcareer/600/400",
-        link: "https://nextcareer-ai-one.vercel.app"
+        title: "RuvixMail",
+        desc: "Free instant disposable inboxes, zero signup. Your instant disposable inbox for fast private mail with zero spam.",
+        tags: ["Instant Inboxes", "Zero Signup", "Private Mail"],
+        image: "https://picsum.photos/seed/ruvixmail/600/400",
+        link: "https://ruvixmail.xyz"
     },
     {
-        title: "FraudLens",
-        desc: "A real-time AI-powered fraud detection platform that analyzes messages, UPI IDs, QR codes, screenshots, and live phone calls to protect Indian users from scams — delivering instant verdicts with plain-language explanations and SMS alerts.",
-        tags: ["Next.js 16", "TypeScript", "Tailwind CSS", "Supabase pgvector", "Gemini 2.5 Flash", "Groq Llama 3", "Deepgram", "Twilio"],
-        image: "https://picsum.photos/seed/fraudlens/600/400",
-        link: "https://fraudlens-seven.vercel.app"
+        title: "zRuvix.com",
+        desc: "My personal portfolio. Doing things for fun — I build products with AI, plan, design, and ship things that actually work.",
+        tags: ["Personal Portfolio", "AI Products"],
+        image: "https://picsum.photos/seed/zruvix/600/400",
+        link: "https://zruvix.com"
     }
 ];
 
@@ -59,7 +59,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate, toggleTh
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="text-xl text-gray-500 dark:text-gray-400 max-w-2xl font-light"
                     >
-                        A collection of projects exploring the intersection of design, engineering, and data science.
+                        Projects I actually shipped — doing things for fun.
                     </motion.p>
                 </div>
 

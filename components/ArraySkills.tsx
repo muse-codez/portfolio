@@ -13,6 +13,8 @@ export const SKILLS: Skill[] = [
   { name: 'TypeScript', icon: 'https://cdn.simpleicons.org/typescript/3178C6' },
   { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/javascript/F7DF1E' },
   { name: 'Python', icon: 'https://cdn.simpleicons.org/python/3776AB' },
+  { name: 'Go', icon: 'https://cdn.simpleicons.org/go/00ADD8' },
+  { name: 'Redis', icon: 'https://cdn.simpleicons.org/redis/DC382D' },
   { name: 'Tailwind CSS', icon: 'https://cdn.simpleicons.org/tailwindcss/06B6D4' },
   { name: 'Framer Motion', icon: 'https://cdn.simpleicons.org/framer/0055FF/ffffff' },
   { name: 'Node.js', icon: 'https://cdn.simpleicons.org/nodedotjs/339933' },

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowUpRight, Github, Eye, ArrowRight, FileText, ChevronDown, ChevronRight, Copy, Check } from 'lucide-react';
+import { ArrowUpRight, Github, Eye, ArrowRight, FileText, ChevronDown, ChevronRight, Copy, Check, Globe, Send } from 'lucide-react';
 
 import { cn, triggerHaptic } from '../lib/utils';
 import { ScrollReveal } from './ScrollReveal';
@@ -51,7 +51,7 @@ const EXPERIENCE_DATA = [
             "The Foundation (Locking In): Dedicated a focused two-month lock-in period to master the modern web ecosystem, building robust backends with Node.js, Express, and PostgreSQL, while architecting clean UIs with React and Tailwind CSS.",
             "Architecting the Stack: Scaled up to production-grade tools, utilizing Next.js 15, Drizzle ORM, and Clerk for authentication to build highly optimized, full-stack dashboards and applications.",
             "AI Internals & Automation: Deep diving into the core architecture of Large Language Models (studying model building from scratch) and exploring intelligent workflow orchestration using AI agents and n8n.",
-            "Shipping Real-World Systems: Bridging full-stack and AI by building platforms like NextCareer AI, FraudLens, and  Actively collaborating to integrate polished, high-performance frontends with complex Python-based AI backends."
+            "Shipping Real-World Systems: Building products like RuvixMail — free instant disposable inboxes with zero signup — and shipping things that actually work."
         ]
     }
 ];
@@ -163,11 +163,11 @@ export const PortfolioHome: React.FC<PortfolioHomeProps> = ({ onNavigate, toggle
                             <div className="aspect-square w-full rounded-2xl border border-gray-200 dark:border-white/10 p-1 bg-white dark:bg-[#111] shadow-xl overflow-hidden pointer-events-none select-none">
                                 <img
                                     src="/profile.jpg"
-                                    alt="Animesh profile"
+                                    alt="zRuvix profile"
                                     className="w-full h-full rounded-xl object-cover pointer-events-none"
                                 />
                                 <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-black dark:bg-white rounded-full flex items-center justify-center text-white dark:text-black font-serif text-[10px] border-2 border-white dark:border-black shadow-lg">
-                                    A
+                                    Z
                                 </div>
                             </div>
                         </motion.div>
@@ -191,19 +191,17 @@ export const PortfolioHome: React.FC<PortfolioHomeProps> = ({ onNavigate, toggle
                                         </div>
                                     </div>
                                     <h1 ref={triggerRef} className="text-3xl md:text-4xl font-serif font-medium text-gray-900 dark:text-white mb-2 leading-tight text-balance">
-                                        Hi, I'm Animesh
+                                        Hi, I'm zRuvix
                                     </h1>
 
                                     {/* Typewriter Role Text */}
                                     <div className="mb-2 h-10 md:h-12 flex items-center">
                                         <NativeTypewriter
                                             content={[
-                                                "Full Stack Developer",
-                                                "Data Scientist",
-                                                "UI/UX Designer",
-                                                "Creative Developer",
-                                                "Problem Solver",
-                                                "Entrepreneur"
+                                                "AI Product Builder",
+                                                "Product Designer",
+                                                "Builder",
+                                                "Thinking Differently"
                                             ]}
                                             speed="medium"
                                             loop={true}
@@ -213,7 +211,7 @@ export const PortfolioHome: React.FC<PortfolioHomeProps> = ({ onNavigate, toggle
 
                                     <div className="prose dark:prose-invert prose-gray max-w-lg mb-6">
                                         <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base text-pretty">
-                                            Building polished digital experiences <LocationIndicator />. Currently a developer combining engineering rigor with creative design.
+                                            Doing things for fun. I build products with AI — not a traditional coder. I plan, design, and ship things that actually work.
                                         </p>
                                     </div>
                                 </div>
@@ -332,24 +330,24 @@ export const PortfolioHome: React.FC<PortfolioHomeProps> = ({ onNavigate, toggle
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <ProjectCard
                             index={0}
-                            title="NextCareer AI"
-                            description="An AI-powered career platform that lets users build professional resumes and generate personalized career roadmaps."
-                            tags={["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Drizzle ORM", "Neon Postgres", "Clerk", "Upstash"]}
-                            link="https://nextcareer-ai-one.vercel.app"
-                            imageUrl="https://i.pinimg.com/originals/99/ca/28/99ca287813fd0e1f689489fa9550dbcd.gif"
-                            githubUrl="https://github.com/animatrix01"
+                            title="RuvixMail"
+                            description="Free instant disposable inboxes, zero signup. Your instant disposable inbox for fast private mail with zero spam."
+                            tags={["Instant Inboxes", "Zero Signup", "Private Mail"]}
+                            link="https://ruvixmail.xyz"
+                            imageUrl="https://picsum.photos/seed/ruvixmail/600/400"
+                            githubUrl="https://github.com/zRuvix"
                             isDimmed={hoveredProject !== null && hoveredProject !== 0}
                             onHover={() => setHoveredProject(0)}
                             onLeave={() => setHoveredProject(null)}
                         />
                         <ProjectCard
                             index={1}
-                            title="FraudLens"
-                            description="A real-time AI-powered fraud detection platform that analyzes messages, UPI IDs, QR codes, screenshots, and live phone calls to protect Indian users from scams — delivering instant verdicts with plain-language explanations and SMS alerts."
-                            tags={["Next.js 16", "TypeScript", "Tailwind CSS", "Supabase pgvector", "Gemini 2.5 Flash", "Groq Llama 3", "Deepgram", "Twilio"]}
-                            link="https://fraudlens-seven.vercel.app"
-                            imageUrl="https://i.pinimg.com/originals/0a/d7/35/0ad735f722522d9a424b2a018ff63319.gif"
-                            githubUrl="https://github.com/animatrix01"
+                            title="zRuvix.com"
+                            description="My personal portfolio. Doing things for fun — I build products with AI, plan, design, and ship things that actually work."
+                            tags={["Personal Portfolio", "AI Products"]}
+                            link="https://zruvix.com"
+                            imageUrl="https://picsum.photos/seed/zruvix/600/400"
+                            githubUrl="https://github.com/zRuvix"
                             isDimmed={hoveredProject !== null && hoveredProject !== 1}
                             onHover={() => setHoveredProject(1)}
                             onLeave={() => setHoveredProject(null)}
@@ -396,7 +394,7 @@ export const PortfolioHome: React.FC<PortfolioHomeProps> = ({ onNavigate, toggle
 
                         {/* Single Line Handwritten Text */}
                         <p className="font-handwriting text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-12  origin-center">
-                            DM me on X or Drop a Mail
+                            DM me on X or Telegram
                         </p>
 
                         {/* Social Dock */}
@@ -421,7 +419,7 @@ export const PortfolioHome: React.FC<PortfolioHomeProps> = ({ onNavigate, toggle
                                         className="relative font-semibold text-gray-900 dark:text-white group cursor-pointer inline-block"
                                         onClick={() => triggerHaptic(10)}
                                     >
-                                        Animesh
+                                        zRuvix
                                     </span>
                                     <span className="hover:animate-pulse transition-transform cursor-default">🫶</span>
                                 </p>
@@ -463,16 +461,16 @@ const SocialDock = () => {
     const [copied, setCopied] = useState(false);
 
     const socialLinks = [
-        { icon: XIcon, label: "Twitter", href: "https://x.com/animatrix01" },
-        { icon: LinkedInIcon, label: "LinkedIn", href: "https://www.linkedin.com/in/thakuranimesh/" },
-        { icon: GmailIcon, label: "Email", href: "mailto:hello.animeshh@gmail.com" },
-        { icon: Github, label: "GitHub", href: "https://github.com/animatrix01" }
+        { icon: XIcon, label: "Twitter", href: "https://x.com/zRuvix_" },
+        { icon: Github, label: "GitHub", href: "https://github.com/zRuvix" },
+        { icon: Globe, label: "Website", href: "https://zruvix.com" },
+        { icon: Send, label: "Telegram", href: "https://t.me/zRuvix" }
     ];
 
     const handleCopy = (e: React.MouseEvent) => {
         e.stopPropagation();
         e.preventDefault();
-        navigator.clipboard.writeText('hello.animeshh@gmail.com');
+        navigator.clipboard.writeText('https://t.me/zRuvix');
         setCopied(true);
         triggerHaptic(15);
         setTimeout(() => setCopied(false), 2000);
@@ -514,7 +512,7 @@ const SocialDock = () => {
                                 >
                                     {link.label === 'Email' ? (
                                         <div className="flex items-center gap-2 group/tooltip">
-                                            <span>hello.animeshh@gmail.com</span>
+                                            <span>https://t.me/zRuvix</span>
                                             <div className="p-1 rounded-md bg-white/10 dark:bg-black/10 hover:bg-white/20 dark:hover:bg-black/20 transition-colors">
                                                 {copied ? (
                                                     <Check className="w-3 h-3 text-green-400 dark:text-green-600" />

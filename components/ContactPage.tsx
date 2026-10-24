@@ -42,16 +42,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, toggleThem
                             </p>
 
                             <div>
-                                <div className="text-sm font-mono text-gray-400 mb-1 uppercase tracking-wider">Email</div>
-                                <a href="mailto:hello.animeshh@gmail.com" className="text-xl hover:text-blue-500 transition-colors">hello.animeshh@gmail.com</a>
+                                <div className="text-sm font-mono text-gray-400 mb-1 uppercase tracking-wider">Website</div>
+                                <a href="https://zruvix.com" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-blue-500 transition-colors">zruvix.com</a>
                             </div>
 
                             <div>
                                 <div className="text-sm font-mono text-gray-400 mb-1 uppercase tracking-wider">Socials</div>
                                 <div className="flex gap-6">
-                                    <a href="https://x.com/animatrix01" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">Twitter</a>
-                                    <a href="https://www.linkedin.com/in/thakuranimesh/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">LinkedIn</a>
-                                    <a href="https://github.com/animatrix01" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">GitHub</a>
+                                    <a href="https://x.com/zRuvix_" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">Twitter</a>
+                                    <a href="https://t.me/zRuvix" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">Telegram</a>
+                                    <a href="https://github.com/zRuvix" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">GitHub</a>
                                 </div>
                             </div>
                         </div>
